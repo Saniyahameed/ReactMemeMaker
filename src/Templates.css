@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: Impact;
-  src: url('./fonts/impact.ttf');
+  src: url('./fonts/Lato-Black.ttf');
 }
 
 html, body {
@@ -121,7 +121,7 @@ html, body {
   width: 100%;
   font-family: Impact;
   text-align: center;
-  text-transform: uppercase;
+  text-transform: none;
   bottom: 0;
   padding: 5px;
   color: #fff;
@@ -136,7 +136,7 @@ html, body {
   width: 100%;
   font-family: Impact;
   text-align: center;
-  text-transform: uppercase;
+  text-transform: none;
   top: 0;
   padding: 5px;
   color: #fff;

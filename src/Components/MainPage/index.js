@@ -165,8 +165,8 @@ class MainPage extends React.Component {
     var newHeight = newWidth / wrh;
     const textStyle = {
       fontFamily: "Impact",
-      fontSize: "50px",
-      textTransform: "uppercase",
+      fontSize: "35px",
+      textTransform: "none",
       fill: "#FFF",
       stroke: "#000",
       userSelect: "none"
@@ -176,12 +176,12 @@ class MainPage extends React.Component {
       <div>
         <div className="main-content">
           <div className="sidebar">
-            <NavbarBrand href="/">Make-a-Meme</NavbarBrand>
+            <NavbarBrand href="/">Postmaker</NavbarBrand>
             <p>
-              This is a fun 5 hour project inspired by imgur. Built with React.
+             Choose a template to get started!
             </p>
             <p>
-              You can add top and bottom text to a meme-template, move the text around and can save the image by downloading it.
+              You can add top and bottom text to your template, move the text around and can save the image by downloading it.
             </p>
           </div>
           <div className="content">
@@ -205,7 +205,7 @@ class MainPage extends React.Component {
           </div>
         </div>
         <Modal className="meme-gen-modal" isOpen={this.state.modalIsOpen}>
-          <ModalHeader toggle={this.toggle}>Make-a-Meme</ModalHeader>
+          <ModalHeader toggle={this.toggle}>Postmaker</ModalHeader>
           <ModalBody>
             <svg
               width={newWidth}
@@ -252,7 +252,7 @@ class MainPage extends React.Component {
                 <Label for="bottomtext">Bottom Text</Label>
                 <input className="form-control" type="text" name="bottomtext" id="bottomtext" placeholder="Add text to the bottom" onChange={this.changeText} />
               </FormGroup>
-              <button onClick={() => this.convertSvgToImage()} className="btn btn-primary">Download Meme!</button>
+              <button onClick={() => this.convertSvgToImage()} className="btn btn-primary">Download Post!</button>
             </div>
           </ModalBody>
         </Modal>
